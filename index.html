@@ -75,10 +75,24 @@
     <script async defer src="https://apis.google.com/js/api.js"
       onload="this.onload=function(){};handleClientLoad()"
       onreadystatechange="if (this.readyState === 'complete') this.onload()">
+      
+          function my(wynik) {
+
+for(var row=0 ; row<10 ; row++){
+    for(var col=0; col<5; col++){
+        document.getElementById(row+":"+col).value = wynik.value[row][col];
+    }
+}
+
+
+}
     </script>
  
     <button id="signin-button" onclick="handleSignInClick()">Sign in</button>
     <button id="signout-button" onclick="handleSignOutClick()">Sign out</button>
+    
+
+    
     
       </body>
 </html>
